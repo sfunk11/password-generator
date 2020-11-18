@@ -25,6 +25,7 @@ function getCriteria(){
   var upper = confirm("Press confirm if you would like upper case letters in your password.");
   var special = confirm("Press confirm if you would like special characters in your password.");
 
+
   if(num){
     finalString = numbers;
   }
@@ -37,7 +38,11 @@ function getCriteria(){
   if(special){
     finalString = finalString + specialCharacters;
   }
+  if(num===false && lower === false && upper === false && special === false){
+    alert("You must choose at lease one criteria. Please try again.")
+    finalString = "";
 
+  }
  return (finalString);
  
 }
@@ -59,4 +64,9 @@ var length = parseInt(passwordLength, 10);
 
 // Call the functions to generate the password
 getCriteria();
+if (finalString === "") {
+  getCriteria();
+}
+else{
 writePassword();
+}
