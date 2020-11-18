@@ -16,4 +16,4 @@ This site generates a random password string that meets the criteria that the us
 
 3.) The password will be generated.  Clicking the "Generate Password" button will re-generate a password using the same length and criteria each time it is pressed.
 
-![Screenshot](./images/password-generator.png)
+![Screenshot](./assets/images/password-generator.png)
