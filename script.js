@@ -2,6 +2,7 @@ var numbers = "0123456789";
 var lowerLetters = "abcdefghijklmnopqrstuvwxyz";
 var upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var specialCharacters = " !#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+var finalString = "";
 
 
 // Assignment Code
@@ -25,7 +26,7 @@ function getCriteria(){
   var lower = confirm("Press Confirm if you would like lower case letters in your password");
   var upper = confirm("Press confirm if you would like upper case letters in your password.");
   var special = confirm("Press confirm if you would like special characters in your password.");
-
+  
 
   if(num){
     finalString = numbers;
